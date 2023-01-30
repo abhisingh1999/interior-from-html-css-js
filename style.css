@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 300px;
+  padding: 30px 16px;
+  position: fixed;
+  top: 0;
+}
+
+.sidebar h2 {
+  margin: 0;
+  padding: 50px 0px;
+}
+
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar ul li a,
+.sidebar ul li button {
+  display: block;
+  text-decoration: none;
+  color: aliceblue;
+  padding: 10px 5px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  text-align: left;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li button:hover {
+  background-color: aliceblue;
+  color: black;
+  cursor: pointer;
+}
+
+.content {
+  margin-left: 300px;
+  padding: 40px;
+  padding-bottom: 0px;
+}
+.content h1 {
+  font-size: 64px;
+  margin: 10px 0px;
+}
+.content h2 {
+  font-size: 48px;
+  margin: 10px 0px;
+}
+.divider {
+  width: 50px;
+  border: 5px solid;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+.row {
+  display: flex;
+  gap: 15px;
+  row-gap: 15px;
+}
+.col-6 {
+  width: 50%;
+}
+.col-4 {
+  width: 33%;
+}
+.col-6 > img {
+  width: 100%;
+  opacity: 0.5;
+}
+.col-6 > img:hover {
+  opacity: 1;
+}
+main > section {
+  margin-bottom: 50px;
+}
+.card-body {
+  color: #000 !important;
+  background-color: #f1f1f1 !important;
+  padding: 10px;
+}
+.card-header {
+  background-color: #616161 !important;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 32px 16px;
+  font-size: 24px;
+}
+.card > img {
+  display: block;
+  width: 100%;
+}
+.package-list > div {
+  border-bottom: 1px solid #80808045;
+  padding: 16px;
+  text-align: center;
+}
+.package-list > div:last-child {
+  border-bottom: none;
+}
+.price {
+  margin: 10px;
+  font-size: 30px;
+}
+.btn {
+  border: none;
+  padding: 12px 24px;
+}
+.bt {
+  border: none;
+  padding: 12px 24px;
+  width: 100%;
+  margin-top: 20px;
+}
+.label {
+  display: block;
+}
+.input {
+  width: 100%;
+  font-size: large;
+  padding: 12px;
+  overflow: visible;
+}
+
+.light-btn {
+  color: #000;
+  background-color: #ffffff;
+}
+.theme-bg-orange {
+  background-color: #f44336 !important;
+  color: aliceblue;
+}
+.theme-text-orange {
+  color: #f44336;
+}
+.theme-bg-blue {
+  background-color: #2d1a9a !important;
+  color: aliceblue;
+}
+.theme-text-blue {
+  color: #2d1a9a;
+}
+.theme-bg-green {
+  background-color: #18d177 !important;
+  color: aliceblue;
+}
+.theme-text-green {
+  color: #18d177;
+}
+
+.theme-border-blue {
+  border-color: #2d1a9a;
+}
+.theme-border-green {
+  border-color: #18d177;
+}
+.theme-border-orange {
+  border-color: #f44336;
+}
+
+.theme-border-dark {
+  border-color: #37373a;
+}
+.theme-bg-dark {
+  background-color: #37373a !important;
+  color: aliceblue;
+}
+.theme-text-dark {
+  color: #37373a;
+}
+
+.btn:hover {
+  background-color: #000 !important;
+  color: #ffffff;
+}
+.bt:hover {
+  background-color: lightgrey !important;
+  color: black;
+}
+.foot {
+  margin: 90px 0px 0px 300px;
+  padding: 40px;
+  background-color: rgb(234, 238, 245);
+  font-size: x-large;
+  text-align: right;
+}
+.text-danger {
+  color: red;
+}
+.text-success {
+  color: green;
+}
+div.col-6 img {
+  cursor: pointer;
+}
+.full {
+  padding-top: 0px;
+  display: none;
+  color: #fff !important;
+  background-color: #000 !important;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+div.full span {
+  color: #fff !important;
+  background-color: #000 !important;
+  font-size: 36px !important;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+div.full div {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+  text-align: center !important;
+  width: 900px;
+  margin: auto;
+  padding: 0;
+}
+div.full div img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    height: auto;
+    width: 100%;
+    position: static;
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content {
+    margin-left: 0;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .col-4 {
+    width: 100%;
+  }
+  .col-6 {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+  }
+  .foot {
+    margin: 0px;
+  }
+}
